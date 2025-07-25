@@ -1,0 +1,1 @@
+0 0 * * * /home/debian/Desktop/updates0/updates.sh >> /var/log/update-server.log 2>> /var/log/update-server-error.log
