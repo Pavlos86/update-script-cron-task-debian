@@ -1,0 +1,9 @@
+sudo touch /var/log/update-server.log
+sudo touch /var/log/update-server-error.log
+sudo chown debian:debian /var/log/update-server.log
+sudo chown debian:debian /var/log/update-server-error.log
+sudo apt-get update -y >> /var/log/update-server.log 2>> /var/log/update-server-error.log
+sudo apt-get upgrade -y >> /var/log/update-server.log 2>> /var/log/update-server-error.log
+
+
+
